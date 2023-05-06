@@ -7,13 +7,10 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Boss 1
+  m_Name: Bullet
   m_Shader: {fileID: 4800000, guid: 0803c241834332942abfcbd27c498b46, type: 3}
   m_ValidKeywords:
-  - _ENABLEHOLOGRAM_ON
-  - _ENABLEOUTEROUTLINE_ON
-  - _ENABLEPOISON_ON
-  - _ENABLERAINBOW_ON
+  - _ENABLEADDCOLOR_ON
   - _ENABLEUVROTATE_ON
   - _SHADERSPACE_UV
   - _TIMESETTINGS_LINEAR_DEFAULT
@@ -154,7 +151,7 @@ Material:
     - _DirectionalGlowFadeNoiseFactor: 0.2
     - _DirectionalGlowFadeRotation: 0
     - _DirectionalGlowFadeWidth: 0.1
-    - _EnableAddColor: 0
+    - _EnableAddColor: 1
     - _EnableAddHue: 0
     - _EnableAlphaTint: 0
     - _EnableBlackTint: 0
@@ -176,15 +173,15 @@ Material:
     - _EnableFullGlowDissolve: 0
     - _EnableGlitch: 0
     - _EnableHalftone: 0
-    - _EnableHologram: 1
+    - _EnableHologram: 0
     - _EnableHue: 0
     - _EnableInkSpread: 0
     - _EnableInnerOutline: 0
     - _EnableMetal: 0
-    - _EnableOuterOutline: 1
+    - _EnableOuterOutline: 0
     - _EnablePixelate: 0
-    - _EnablePoison: 1
-    - _EnableRainbow: 1
+    - _EnablePoison: 0
+    - _EnableRainbow: 0
     - _EnableRecolor: 0
     - _EnableSaturation: 0
     - _EnableShiftHue: 0
@@ -235,7 +232,7 @@ Material:
     - _HologramDistortionOffset: 0.5
     - _HologramDistortionScale: 10
     - _HologramDistortionSpeed: 2
-    - _HologramFade: 0.037
+    - _HologramFade: 1
     - _HologramLineFrequency: 500
     - _HologramLineGap: 3
     - _HologramLineSpeed: 0.01
@@ -255,7 +252,7 @@ Material:
     - _MetalHighlightDensity: 1
     - _OuterOutlineDistortionToggle: 0
     - _OuterOutlineFade: 1
-    - _OuterOutlineWidth: 0.01
+    - _OuterOutlineWidth: 0.04
     - _PixelateFade: 1
     - _PixelatePixelDensity: 16
     - _PixelsPerUnit: 100
@@ -267,7 +264,7 @@ Material:
     - _RainbowBrightness: 2
     - _RainbowContrast: 1
     - _RainbowDensity: 0.5
-    - _RainbowFade: 0.294
+    - _RainbowFade: 1
     - _RainbowNoiseFactor: 0.2
     - _RainbowSaturation: 1
     - _RainbowSpeed: 1
@@ -329,7 +326,7 @@ Material:
     - _TimeSettings: 0
     - _TimeValue: 0
     - _UVDistortFade: 1
-    - _UVRotateSpeed: 0.3
+    - _UVRotateSpeed: 0.5
     - _UberFading: 0
     - _UberNoiseFactor: 0.2
     - _UberWidth: 0.3
@@ -346,7 +343,7 @@ Material:
     - _WindSquishWindFactor: 0
     - _WindXPosition: 0
     m_Colors:
-    - _AddColorColor: {r: 4, g: 0, b: 0, a: 0}
+    - _AddColorColor: {r: 3.9999995, g: 0, b: 2.6366746, a: 0}
     - _AlphaTintColor: {r: 23.96863, g: 1.254902, b: 23.96863, a: 0}
     - _BlackTintColor: {r: 1, g: 0, b: 0, a: 0}
     - _BurnEdgeColor: {r: 11.98431, g: 1.129412, b: 0.1254902, a: 0}
@@ -414,11 +411,11 @@ Material:
     - _MetalNoiseDistortionSpeed: {r: -0.05, g: -0.05, b: 0, a: 0}
     - _MetalNoiseScale: {r: 0.25, g: 0.25, b: 0, a: 0}
     - _MetalNoiseSpeed: {r: 0.05, g: 0.05, b: 0, a: 0}
-    - _OuterOutlineColor: {r: 0.111932434, g: 0.10946172, b: 0.12477186, a: 1}
+    - _OuterOutlineColor: {r: 0, g: 0, b: 0, a: 1}
     - _OuterOutlineDistortionIntensity: {r: 0.01, g: 0.01, b: 0, a: 0}
     - _OuterOutlineNoiseScale: {r: 4, g: 4, b: 0, a: 0}
     - _OuterOutlineNoiseSpeed: {r: 0, g: 0.1, b: 0, a: 0}
-    - _PoisonColor: {r: 0, g: 0, b: 0, a: 0}
+    - _PoisonColor: {r: 0.3137255, g: 2.996078, b: 0.3137255, a: 0}
     - _PoisonNoiseScale: {r: 0.2, g: 0.2, b: 0, a: 0}
     - _PoisonNoiseSpeed: {r: 0, g: -0.2, b: 0, a: 0}
     - _RainbowCenter: {r: 0, g: 0, b: 0, a: 0}
@@ -444,7 +441,7 @@ Material:
     - _SplitToningShadowsColor: {r: 0.1, g: 0.4000002, b: 1, a: 0}
     - _SqueezeCenter: {r: 0.5, g: 0.5, b: 0, a: 0}
     - _SqueezeScale: {r: 2, g: 0, b: 0, a: 0}
-    - _StrongTintTint: {r: 0, g: 0, b: 0, a: 1}
+    - _StrongTintTint: {r: 1, g: 1, b: 1, a: 1}
     - _UVDistortFrom: {r: -0.02, g: -0.02, b: 0, a: 0}
     - _UVDistortNoiseScale: {r: 0.1, g: 0.1, b: 0, a: 0}
     - _UVDistortSpeed: {r: 2, g: 2, b: 0, a: 0}

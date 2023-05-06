@@ -12,6 +12,7 @@ Material:
   m_ValidKeywords:
   - _ENABLEMETAL_ON
   - _ENABLEOUTEROUTLINE_ON
+  - _ENABLEUVROTATE_ON
   - _SHADERSPACE_UV
   - _TIMESETTINGS_LINEAR_DEFAULT
   - _UBERFADING_NONE
@@ -197,7 +198,7 @@ Material:
     - _EnableSquish2: 0
     - _EnableStrongTint: 0
     - _EnableUVDistort: 0
-    - _EnableUVRotate: 0
+    - _EnableUVRotate: 1
     - _EnableUVScale: 0
     - _EnableUVScroll: 0
     - _EnableVibrate: 0
@@ -326,7 +327,7 @@ Material:
     - _TimeSettings: 0
     - _TimeValue: 0
     - _UVDistortFade: 1
-    - _UVRotateSpeed: 1
+    - _UVRotateSpeed: 0.3
     - _UberFading: 0
     - _UberNoiseFactor: 0.2
     - _UberWidth: 0.3

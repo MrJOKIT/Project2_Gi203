@@ -136,6 +136,7 @@ public class PlayerStats : MonoBehaviour
 
     private void Die()
     {
+        Cursor.visible = true;
         _playerController.isDie = true;
         PlayerAnimationState.instance.State = PlayerAnimationState.PlayerState.Idle;
         PlayerAnimationState.instance.State = PlayerAnimationState.PlayerState.Die;

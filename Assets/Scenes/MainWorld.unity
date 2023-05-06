@@ -6085,9 +6085,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 407295251
-  m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingLayerID: -1775948315
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 2f9ee06683422184e84cdba7dd4d7a29, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -8171,7 +8171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4662375da1f83147b7f48d5c34d3377, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHealth: 100
+  maxHealth: 200
   health: 0
   hpImage: {fileID: 1796258205}
   hpText: {fileID: 169524253}
@@ -8195,7 +8195,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerDamage: 15
   attackText: {fileID: 1488495603}
-  attackCost: 17.5
+  attackCost: 12.5
   keyAttack: 106
   attackRadius: 0.7
   attackPos: {fileID: 1029533274}
@@ -93346,9 +93346,9 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 407295251
-  m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingLayerID: -1775948315
+  m_SortingLayer: 1
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 2f9ee06683422184e84cdba7dd4d7a29, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -99766,7 +99766,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 728216345}
         m_TargetAssemblyTypeName: PlayerMenu, Assembly-CSharp
-        m_MethodName: LoadScene
+        m_MethodName: MainMenu
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -100034,7 +100034,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e36245f931e093540a377ca0327afb3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 5429929079712330712, guid: 39611e151b562944182cc194d2042057, type: 3}
+  bulletPrefab: {fileID: 5429929079712330712, guid: 936d045d7daac3044ba94f81f5c88a9d, type: 3}
   shootPosition: {fileID: 6898427824289306893}
   bulletSpeed: 0.5
   detectRadius: 16.51

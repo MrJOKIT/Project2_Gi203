@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
 
     public void RestartGame()
     {
+        Cursor.visible = false;
         SceneManager.LoadSceneAsync(1);
     }
 }

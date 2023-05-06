@@ -37,4 +37,10 @@ public class PlayerMenu : MonoBehaviour
         Cursor.visible = false;
         SceneManager.LoadSceneAsync(sceneNumber);
     }
+
+    public void MainMenu(int sceneNumber)
+    {
+        Cursor.visible = true;
+        SceneManager.LoadSceneAsync(sceneNumber);
+    }
 }
