@@ -13,6 +13,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float jumpForce;
     public bool isJumping;
     [SerializeField] private float maxFallSpeed;
+    public ParticleSystem dust;
 
     [Header("Player Direction")] 
     public bool turnRight = true;
@@ -51,6 +52,7 @@ public class PlayerController : MonoBehaviour
             CharacterMovement();
             CharacterJump();
         }
+        
 
     }
 
@@ -99,6 +101,7 @@ public class PlayerController : MonoBehaviour
         {
             isJumping = true;
             rb.velocity = Vector2.up * jumpForce;
+            StartCoroutine(JumpSqueeze(0.5f,1.2f,0.1f));
             SoundManager.instace.Play(SoundManager.SoundName.Jump);
 
         }
@@ -133,6 +136,32 @@ public class PlayerController : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0,180,0);
         }
+        
+    }
+    
+    IEnumerator JumpSqueeze(float xSqueeze, float ySqueeze, float seconds) 
+    {
+        CreateDust();
+        Vector3 originalSize = Vector3.one;
+        Vector3 newSize = new Vector3(xSqueeze, ySqueeze, originalSize.z);
+        float t = 0f;
+        while (t <= 1.0) {
+            t += Time.deltaTime / seconds;
+            transform.localScale = Vector3.Lerp(originalSize, newSize, t);
+            yield return null;
+        }
+        t = 0f;
+        while (t <= 1.0) {
+            t += Time.deltaTime / seconds;
+            transform.localScale = Vector3.Lerp(newSize, originalSize, t);
+            yield return null;
+        }
+
+    }
+    
+    public void CreateDust()
+    {
+        dust.Play();
     }
 
     private void OnDrawGizmos()

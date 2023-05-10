@@ -117,6 +117,7 @@ public class CheckPointTotem : MonoBehaviour
     public void UpgradeHealth()
     {
         _playerStats.MaxHealth += 10;
+        _playerStats.Health += 10;
         PlayerPrefs.SetFloat("Health",_playerStats.Health);
         _playerInventory.RunePoint -= upHpCost;
     }
